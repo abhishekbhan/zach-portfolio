@@ -1,6 +1,7 @@
 # Zach
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+Clone the project git clone https://github.com/abhishekbhan/zach-portfolio.git
+npm install, ng serve
 
 ## Development server
 
