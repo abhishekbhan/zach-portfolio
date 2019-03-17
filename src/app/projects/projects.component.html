@@ -1,0 +1,38 @@
+<div class="container">
+  <main class="home-container">
+    <div class="panel-top page-section">
+      <div class="panel-top-header-section">
+        <h2 class="panel-top-heading">Hi! I'm Zach</h2>
+        <h6 class="panel-top-subheading">I design applications!</h6>
+      </div>
+      <div class="scoll-down-link" (click)="scrollDown($event);">
+        <span>SCROLL DOWN</span>
+        <img class="icon-arrow-down" src="/assets/images/icon-down.svg"/>
+      </div>
+    </div>
+
+    <div id="project-section" class="page-section">
+      <h3 class="section-title">Work I've done.</h3>
+      <div class="project-list">
+        <div *ngFor="let project of projects" class="project-tile-shell">
+          <div class="project-tile" (click)="openProject(project)">
+            <img src="{{project.imageUrl}}">
+            <p class="project.projectTitle" class="project-tile-title">This is the title</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-info-section" class="page-section">
+      <h3 class="section-title">Who I am!.</h3>
+      <div class="row">
+        <div class="col-md-7 my-info-text-section">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        <div class="col-md-5">
+          <img src="/assets/images/dummy.png" class="my-info-image">
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
