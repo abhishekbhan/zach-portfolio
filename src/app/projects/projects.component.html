@@ -1,5 +1,5 @@
 <div class="container">
-  <main class="home-container">
+  <main class="home-container" *ngIf="selectedProject == null;">
     <div class="panel-top page-section">
       <div class="panel-top-header-section">
         <h2 class="panel-top-heading">Hi! I'm Zach</h2>
@@ -17,7 +17,7 @@
         <div *ngFor="let project of projects" class="project-tile-shell">
           <div class="project-tile" (click)="openProject(project)">
             <img src="{{project.imageUrl}}">
-            <p class="project.projectTitle" class="project-tile-title">This is the title</p>
+            <p class="project.projectTitle" class="project-tile-title">{{project.projectTitle}}</p>
           </div>
         </div>
       </div>
@@ -33,6 +33,16 @@
           <img src="/assets/images/dummy.png" class="my-info-image">
         </div>
       </div>
+    </div>
+  </main>
+  <main class="project-container" *ngIf="selectedProject">
+    <app-project [(project)]="selectedProject"></app-project>
+    <div class="project-change-section">
+      <span class="prev-button" [ngClass]="{'hidden-button': hasPrevious(selectedProject) === false}" (click)="openPrevProject(selectedProject)"> < PREVIOUS PROJECT</span>
+      <span (click)="closeSelectedProject();" class="close-button">
+        <img src="/assets/images/squares.png"/>
+      </span>
+      <span class="next-button" [ngClass]="{'hidden-button': hasNext(selectedProject) === false}" (click)="openNextProject(selectedProject)">NEXT PROJECT > </span>
     </div>
   </main>
 </div>

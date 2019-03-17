@@ -99,3 +99,39 @@
     }
   }
 }
+
+.project-change-section {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #636363;
+  font-size: 12px;
+  cursor: pointer;
+
+  .prev-button {
+    text-align: left;
+    margin-left: 30px;
+
+    &.hidden-button {
+      visibility: hidden;
+    }
+  }
+  .next-button {
+    text-align: right;
+    margin-right: 30px;
+
+    &.hidden-button {
+      visibility: hidden;
+    }
+  }
+  .close-button {
+    flex-grow: 1;
+    text-align: center;
+    img {
+      height: 30px;
+      margin: 0 auto;
+    }
+  }
+}

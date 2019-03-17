@@ -10,32 +10,27 @@ export class ProjectService {
     this.projects = this.projects = [
       {
         id: 1,
-        projectTitle: 'This is the title',
+        projectTitle: 'Project 1',
         imageUrl: '/assets/images/dummy.png'
       },
       {
         id: 2,
-        projectTitle: 'This is the title',
+        projectTitle: 'Project 2',
         imageUrl: '/assets/images/dummy.png'
       },
       {
         id: 3,
-        projectTitle: 'This is the title',
+        projectTitle: 'Project 3',
         imageUrl: '/assets/images/dummy.png'
       },
       {
         id: 4,
-        projectTitle: 'This is the title',
+        projectTitle: 'Project 4',
         imageUrl: '/assets/images/dummy.png'
       },
       {
         id: 5,
-        projectTitle: 'This is the title',
-        imageUrl: '/assets/images/dummy.png'
-      },
-      {
-        id: 6,
-        projectTitle: 'This is the title',
+        projectTitle: 'Project 5',
         imageUrl: '/assets/images/dummy.png'
       }
     ];
