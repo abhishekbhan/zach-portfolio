@@ -2,8 +2,8 @@
   <main class="home-container" *ngIf="selectedProject == null;">
     <div class="panel-top page-section">
       <div class="panel-top-header-section">
-        <h2 class="panel-top-heading">Hi! I'm Zach</h2>
-        <h6 class="panel-top-subheading">I design applications!</h6>
+        <h1 class="panel-top-heading">Hi, I'm Zach.</h1>
+        <h2 class="panel-top-subheading">I design user interfaces.</h2>
       </div>
       <div class="scoll-down-link" (click)="scrollDown($event);">
         <span>SCROLL DOWN</span>
@@ -24,10 +24,10 @@
     </div>
 
     <div id="my-info-section" class="page-section">
-      <h3 class="section-title">Who I am!.</h3>
+      <h3 class="section-title">Who I am.</h3>
       <div class="row">
         <div class="col-md-7 my-info-text-section">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          I am a graduating Graphic Design student at California State University, East Bay. Starting school as a Computer Science major and finally graduating as a Graphic Designer, I have learned what it takes to develop applications from all viewpoints. Having worked as a design intern at General Electric, I learned from the best on how to create interesting and exciting user interfaces. In my spare time I enjoy short walks with his French Bulldog, Cora, and working on my 1931 Ford Model A and1974 Datsun 510 I built with my father in our garage. My dream of one day traveling to Japan is satiated by sushi and Japanese KitKats, for now.
         </div>
         <div class="col-md-5">
           <img src="/assets/images/dummy.png" class="my-info-image">
@@ -38,11 +38,11 @@
   <main class="project-container" *ngIf="selectedProject">
     <app-project [(project)]="selectedProject"></app-project>
     <div class="project-change-section">
-      <span class="prev-button" [ngClass]="{'hidden-button': hasPrevious(selectedProject) === false}" (click)="openPrevProject(selectedProject)"> < PREVIOUS PROJECT</span>
+      <span class="prev-button" [ngClass]="{'hidden-button': hasPrevious(selectedProject) === false}" (click)="openPrevProject(selectedProject)">PREVIOUS PROJECT</span>
       <span (click)="closeSelectedProject();" class="close-button">
         <img src="/assets/images/squares.png"/>
       </span>
-      <span class="next-button" [ngClass]="{'hidden-button': hasNext(selectedProject) === false}" (click)="openNextProject(selectedProject)">NEXT PROJECT > </span>
+      <span class="next-button" [ngClass]="{'hidden-button': hasNext(selectedProject) === false}" (click)="openNextProject(selectedProject)">NEXT PROJECT</span>
     </div>
   </main>
 </div>

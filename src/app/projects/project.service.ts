@@ -10,7 +10,7 @@ export class ProjectService {
     this.projects = this.projects = [
       {
         id: 1,
-        projectTitle: 'Project 1',
+        projectTitle: 'zach first porject',
         imageUrl: '/assets/images/dummy.png'
       },
       {
@@ -32,6 +32,11 @@ export class ProjectService {
         id: 5,
         projectTitle: 'Project 5',
         imageUrl: '/assets/images/dummy.png'
+      },
+      {
+        id: 6,
+        projectTitle: 'Project 5',
+        imageUrl: '/assets/images/dummy.png'
       }
     ];
     return this.projects;
@@ -46,3 +51,4 @@ export class ProjectService {
     return null;
   }
 }
+//page to add/edit project amounts and titles

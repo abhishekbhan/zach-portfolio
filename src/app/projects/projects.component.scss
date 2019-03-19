@@ -1,9 +1,9 @@
 .page-section {
   .section-title {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 36px;
-    padding-top: 100px;
+    //margin-bottom: 30px;
+    //font-size: 36px;
+    //padding-top: 100px;
   }
   &.panel-top {
     height: calc(100vh - 60px);
@@ -18,10 +18,10 @@
       justify-content: center;
       margin: 0 auto;
       .panel-top-heading {
-        font-size: 96px;
+        //font-size: 96px;
       }
       .panel-top-subheading {
-        font-size:48px;
+        //font-size:48px;
       }
     }
 
@@ -32,7 +32,7 @@
       align-items: center;
 
       .icon-arrow-down {
-        width: 72px;
+        //width: 72px;
         //font-weight: bold;
         //transform: rotate(90deg);
       }
@@ -41,6 +41,7 @@
 
   .my-info-text-section {
     padding-right: 100px;
+    padding-left: 30px;
   }
 
   .my-info-image {

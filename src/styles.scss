@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Centrale Sans Bold";
+  src: url(/assets/fonts/centralesansbold.otf) format('otf');
+}
+@font-face {
+  font-family: "Centrale Sans Regular";
+  src: url(/assets/fonts/centralesansregular.otf) format('otf');
+}
+@font-face {
+  font-family: "Centrale Sans Light";
+  src: url(/assets/fonts/centralesanslight.otf) format('otf');
+}
+
+h1 {
+  font-family: 'Centrale Sans Bold';
+  font-size: 97px;
+  height: 97px;
+  padding-bottom: 20px;
+  margin: 0;
+  letter-spacing: -1.5px;
+  line-height: 97px;
+  color: #000000;
+  text-align: left;
+}
+h2 {
+  font-family: 'Centrale Sans Regular';
+  font-size: 60.69px;
+  height: 60.96px;
+  letter-spacing: -0.5px;
+  line-height: 60.96px;
+  margin: 0;
+  color: #555555;
+  text-align: left;
+}
+h3.section-title {
+  font-family: 'Centrale Sans Bold';
+  font-size: 48.77px;
+  padding-top: 110px;
+  padding-bottom: 0;
+  //height: 48.77px;
+  margin-bottom: 0px;
+}
+#my-info-section {
+  padding-top: 50px;
+}
+.icon-arrow-down {
+  width: 72px;
+  padding-bottom: 10px;
+  color: #442B2D;
+}
+span {
+  font-family: 'Centrale Sans Regular';
+  font-size: 12.19px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  //padding-left: 300px;
+}
+.nav-link {
+  font-family: 'Centrale Sans Regular';
+  font-size: 14.22px;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'Centrale Sans Regular';
+  font-size: 16.26px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+img {
+  border-radius: 4px;
+}
