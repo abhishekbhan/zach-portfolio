@@ -1,8 +1,19 @@
 .navbar {
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .navbar-brand {
+    margin-right: 60px;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
   .navbar-nav {
     margin: 0 auto;
-    
+
     .nav-item {
       margin-right: 25px;
       .nav-link {

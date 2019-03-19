@@ -32,6 +32,7 @@
       align-items: center;
 
       .icon-arrow-down {
+        margin-top: 15px;
         //width: 72px;
         //font-weight: bold;
         //transform: rotate(90deg);
@@ -57,7 +58,7 @@
 
     .project-tile-shell {
       padding: 10px;
-      height: 400px;
+      height: auto;
       width: 33.33%;
     }
 
@@ -73,7 +74,7 @@
       width: 100%;
 
       img {
-        height: 100%;
+        height: auto;
         width: 100%;
       }
 
