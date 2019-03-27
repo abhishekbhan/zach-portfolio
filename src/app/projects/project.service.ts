@@ -1,13 +1,20 @@
 import { Injectable } from '@angular/core';
+import {Observable, BehaviorSubject} from 'rxjs';
 // @Injectable({
 //   providedIn: 'root'
 // })
 @Injectable()
 export class ProjectService {
   projects: Array<any> = [];
-  constructor() {}
+  projectView: BehaviorSubject<any> = new BehaviorSubject(false);
+
+  constructor() {
+  }
+  setProjectView(projectView) {
+    this.projectView.next(projectView);
+  }
   getProjects() {
-    this.projects = this.projects = [
+    this.projects = [
       {
         id: 1,
         projectTitle: 'GarageSale',

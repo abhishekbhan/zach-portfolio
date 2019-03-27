@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectService} from './project.service';
 import * as $ from 'jquery';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-projects',
@@ -10,8 +11,13 @@ import * as $ from 'jquery';
 export class ProjectsComponent implements OnInit {
   private projects: Array<any> = [];
   private selectedProject: any;
+  public projectViewSub: Subscription;
 
-  constructor(public projectService: ProjectService) { }
+  constructor(public projectService: ProjectService) {
+    this.projectViewSub = this.projectService.projectView.subscribe((projectView)=>{
+      this.selectedProject = null;
+    });
+  }
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
