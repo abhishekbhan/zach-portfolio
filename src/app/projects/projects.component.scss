@@ -43,6 +43,12 @@
   .my-info-text-section {
     padding-right: 100px;
     padding-left: 30px;
+
+    @media only screen and (max-width: 800px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 25px;
+    }
   }
 
   .my-info-image {
@@ -60,6 +66,10 @@
       padding: 10px;
       height: auto;
       width: 33.33%;
+
+      @media only screen and (max-width: 800px) {
+        width: 50%;
+      }
     }
 
     .project-tile {
@@ -123,6 +133,11 @@
     &.hidden-button {
       visibility: hidden;
     }
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
   .next-button {
     text-align: right;
@@ -130,6 +145,11 @@
 
     &.hidden-button {
       visibility: hidden;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 10px;
+      margin-left: 10px;
     }
   }
   .close-button {

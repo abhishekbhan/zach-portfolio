@@ -14,6 +14,10 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
     console.log('App loaded!');
+
+    $('.navbar-toggler').on('click', function() {
+      $('.navbar-collapse').toggleClass('show');
+    })
   }
   goToSection(event, section) {
     event.stopPropagation();
