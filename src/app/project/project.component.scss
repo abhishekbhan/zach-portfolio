@@ -1,6 +1,7 @@
 .project-container {
   .project-title {
-    font-family: 'Centrale Sans Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 60.96px;
     letter-spacing: -0.5px;
     line-height: 61px;
@@ -12,5 +13,9 @@
 
   p, img {
     margin-bottom: 30px;
+  }
+  img {
+    width: 1068px;
+    //box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
   }
 }

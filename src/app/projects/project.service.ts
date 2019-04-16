@@ -18,33 +18,29 @@ export class ProjectService {
       {
         id: 1,
         projectTitle: 'GarageSale',
-        imageUrl: '/assets/images/testshot.png'
+        imageUrl: '/assets/images/garageSaleSquare.jpg'
       },
       {
         id: 2,
-        projectTitle: 'Project 2',
-        imageUrl: '/assets/images/dummy.png'
+        projectTitle: 'Nest Transport',
+        imageUrl: '/assets/images/nestTransport.svg'
       },
       {
         id: 3,
-        projectTitle: 'Project 3',
-        imageUrl: '/assets/images/dummy.png'
+        projectTitle: 'Sushi Landing Page',
+        imageUrl: '/assets/images/sushiLandingsq.png'
       },
       {
         id: 4,
-        projectTitle: 'Project 4',
-        imageUrl: '/assets/images/dummy.png'
+        projectTitle: 'Credit Card Checkout',
+        imageUrl: '/assets/images/ccCheckoutSquare.jpg'
       },
       {
         id: 5,
-        projectTitle: 'Project 5',
-        imageUrl: '/assets/images/dummy.png'
+        projectTitle: 'Illustrations',
+        imageUrl: '/assets/images/dragonfruit.svg'
       },
-      {
-        id: 6,
-        projectTitle: 'Project 5',
-        imageUrl: '/assets/images/dummy.png'
-      }
+
     ];
     return this.projects;
   }

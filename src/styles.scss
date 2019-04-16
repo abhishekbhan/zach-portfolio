@@ -1,19 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: "Centrale Sans Bold";
-  src: url(/assets/fonts/centralesansbold.otf) format('otf');
-}
-@font-face {
-  font-family: "Centrale Sans Regular";
-  src: url(/assets/fonts/centralesansregular.otf) format('otf');
-}
-@font-face {
-  font-family: "Centrale Sans Light";
-  src: url(/assets/fonts/centralesanslight.otf) format('otf');
-}
+
 
 h1 {
-  font-family: 'Centrale Sans Bold';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 97px;
   height: 97px;
   padding-bottom: 20px;
@@ -24,7 +14,8 @@ h1 {
   text-align: left;
 }
 h2 {
-  font-family: 'Centrale Sans Regular';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 60.69px;
   height: 60.96px;
   letter-spacing: -0.5px;
@@ -34,7 +25,8 @@ h2 {
   text-align: left;
 }
 h3.section-title {
-  font-family: 'Centrale Sans Bold';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 48.77px;
   padding-top: 110px;
   padding-bottom: 0;
@@ -50,7 +42,8 @@ h3.section-title {
   color: #442B2D;
 }
 span {
-  font-family: 'Centrale Sans Regular';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 12.19px;
   letter-spacing: 2px;
   line-height: 16px;
@@ -58,7 +51,8 @@ span {
   text-transform: uppercase;
 }
 .nav-link {
-  font-family: 'Centrale Sans Regular';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 14.22px;
   letter-spacing: 1.25px;
   line-height: 16px;
@@ -67,17 +61,19 @@ span {
 }
 .project-showcase-section p {
   width: 700px;
-  text-align: center;
+  text-align: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Centrale Sans Regular';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 16.26px;
   letter-spacing: 0.5px;
   line-height: 28px;
 }
 .project-tile-title {
-  font-family: 'Centrale Sans Regular';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 16.26px;
   letter-spacing: 0.5px;
   line-height: 28px;
